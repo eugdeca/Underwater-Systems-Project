@@ -1,0 +1,25 @@
+osm_file: "data/lago.osm"
+
+initial_position:
+  longitude: 10.47519700159793
+  latitude: 43.706259955156185
+
+exploration_area:
+  - [10.475639334080, 43.7066939975062]
+  - [10.4752671285, 43.7066939975062]
+  - [10.475639334080, 43.7064235538]
+  - [10.4752671285, 43.7064235538]
+  
+
+lawnmower:
+  spacing: 5
+  direction: "vertical"
+  angle_deg: 10
+
+motion_params:
+  max_speed: 0.2 #[m/s]
+  stop_threshold: 1.0
+  yaw_threshold: 1.5
+
+inflation: 1.0 #[m]
+  

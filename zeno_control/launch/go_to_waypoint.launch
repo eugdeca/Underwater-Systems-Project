@@ -1,0 +1,6 @@
+<launch>
+    <!-- Avvia il nodo Python per andare al waypoint -->
+    <node name="go_to_waypoint" pkg="zeno_control" type="go_to_waypoint1.py" output="screen" ns="progettini"/>
+    <node name="trajectory_visualizer" pkg="zeno_control" type="location2.py" output="screen" ns="progettini"/>
+</launch>
+

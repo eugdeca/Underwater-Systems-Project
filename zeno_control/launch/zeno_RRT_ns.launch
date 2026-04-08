@@ -1,0 +1,12 @@
+<launch>
+  <!-- Script 1 -->
+  <node pkg="zeno_control" type="trajectory_visualization.py" name="map_position_plotter" output="screen" ns="progettini"/>
+
+  <!-- Script 2 -->
+  <node pkg="zeno_control" type="RRT_obstacleinflation.py" name="rrt_planner_node" output="screen" ns="progettini"/> 
+
+  <!-- Script 3 -->
+  <node pkg="zeno_control" type="go_to_waypoint2.py" name="go_to_waypoints" output="screen" ns="progettini"/>
+  <node pkg="zeno_control" type="goal_position.py" name="goal_position" output="screen" ns="progettini"/>
+  <node pkg="zeno_control" type="map_generator_node.py" name="generated_map" output="screen" ns="progettini"/>
+</launch>
