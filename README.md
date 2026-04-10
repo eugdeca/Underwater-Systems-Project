@@ -12,9 +12,9 @@ This project was developed for the "Sistemi Subacquei" (Underwater Systems) cour
 
 ### 1. Lawn-Mower Exploration
 For the initial mapping phase, the AUV executes a systematic "lawn-mower" (serpentine) trajectory.
-* **High Configurability:** Parameters such as line spacing, the GPS bounding box of the exploration area, and the scan direction can be easily adjusted via a YAML configuration file.
-* **NED Coordinate System:** Geographical coordinates are converted into the local NED (North-East-Down) frame for accurate waypoint generation.
-* **Optimal Sensor Coverage:** The spacing between parallel lines is mathematically derived from the multibeam sonar's 60° aperture and the minimum depth of the basin to guarantee zero blind spots.
+* **High Configurability:** parameters such as line spacing, the GPS bounding box of the exploration area, and the scan direction can be easily adjusted via a YAML configuration file.
+* **NED Coordinate System:** geographical coordinates are converted into the local NED (North-East-Down) frame for accurate waypoint generation.
+* **Optimal Sensor Coverage:** the spacing between parallel lines is mathematically derived from the multibeam sonar's 60° aperture and the minimum depth of the basin to guarantee zero blind spots.
 
 > 
 
@@ -24,9 +24,9 @@ https://github.com/user-attachments/assets/7e071b24-c9c7-4717-b99d-0c4e9b974f64
 
 ### 2. Bathymetry-Based Motion Planning (RRT)
 Once the exploration is complete and the OccupancyGrid map is published, the obstacle avoidance task begins.
-* **RRT Algorithm:** Path planning is handled by the Rapidly-exploring Random Tree (RRT) algorithm, chosen for its computational efficiency.
-* **Obstacle Inflation:** To ensure maximum safety, all detected obstacles are inflated by 1 meter in all directions, safely accommodating the AUV's physical dimensions.
-* **Path Smoothing:** The resulting raw path is optimized using B-spline curves, allowing for fluid navigation without sharp turns that could destabilize the vehicle.
+* **RRT Algorithm:** path planning is handled by the Rapidly-exploring Random Tree (RRT) algorithm, chosen for its computational efficiency.
+* **Obstacle Inflation:** to ensure maximum safety, all detected obstacles are inflated by 1 meter in all directions, safely accommodating the AUV's physical dimensions.
+* **Path Smoothing:** the resulting raw path is optimized using B-spline curves, allowing for fluid navigation without sharp turns that could destabilize the vehicle.
 
 > 
 
