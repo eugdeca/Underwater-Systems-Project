@@ -1,6 +1,6 @@
 # Autonomous Underwater Vehicle (AUV) Navigation Stack
 
-## ⚠️ Note on Project Execution & Proprietary Dependencies
+## Note on Project Execution & Proprietary Dependencies
 The core simulation environment, including the AUV dynamic model and the 3D underwater rendering, is based on a proprietary package provided by the university and cannot be published due to intellectual property restrictions. However, this repository contains the complete autonomous navigation stack developed by our team.
 
 ## About the Project
